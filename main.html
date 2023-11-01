@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>Calculadora Interativa</header>
+    <section id="container">
+        <p id="display" class="display">0</p>
+        <table class="keys">
+            <tr>
+                <td><button type="button" value="7" onclick="insertDisplay('7')">7</button></td>
+                <td><button type="button" value="8" onclick="insertDisplay('8')">8</button></td>
+                <td><button type="button" value="9" onclick="insertDisplay('9')">9</button></td>
+                <td><button type="button" value="+" onclick="insertDisplay('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="4" onclick="insertDisplay('4')">4</button></td>
+                <td><button type="button" value="5" onclick="insertDisplay('5')">5</button></td>
+                <td><button type="button" value="6" onclick="insertDisplay('6')">6</button></td>
+                <td><button type="button" value="-" onclick="insertDisplay('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="1" onclick="insertDisplay('1')">1</button></td>
+                <td><button type="button" value="2" onclick="insertDisplay('2')">2</button></td>
+                <td><button type="button" value="3" onclick="insertDisplay('3')">3</button></td>
+                <td><button type="button" value="*" onclick="insertDisplay('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="0" onclick="insertDisplay('0')">0</button></td>
+                <td><button type="button" value="." onclick="insertDisplay('.')">.</button></td>
+                <td><button type="button" value="/" onclick="insertDisplay('/')">/</button></td>
+                <td><button type="button" value="=" onclick="calcRes()">=</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-limpar" type="button" value="limpar" onclick="cleanDisplay()">Limpar</button></td>
+            </tr>
+        </table>
+    </section>
+    <footer>&copy; Kaíque Freire </footer>
+    <script src="main.js"></script>
+</body>
+</html>
